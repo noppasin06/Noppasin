@@ -10,6 +10,15 @@
       "Base",
     ],
   },
+  "packages": [
+    {
+      "kind": "remote",
+      "repository": "https://github.com/stephencelis/SQLite.swift",
+      "version": {
+        "up-to-next-major-version": "0.17.0",
+      },
+    },
+  ],
   "files": [
     {
       "kind": "folder",
@@ -25,7 +34,39 @@
           ],
         },
       ],
-    }, {
+    },
+    { "path": "account_GRDB.sqlite", "target-membership": [ "sqliteswift1/resources" ] },
+    { "kind": "group", "name": "Frameworks" },
+    { "path": "DS-Digital.TTF", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "KulachatSlab-Regular.ttf", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "9060-1_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "Alanwalker1_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "audio-cd_0.png", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "BadBlood.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "BadBlood_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "ed-Sheeran_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "faded.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "faded_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "headphone-icon.png", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "lb.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "ml.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "music_0.png", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "mv_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "mv_0.png", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "NoPromises.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "NoPromises_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "OneRepublic_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "perfect.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "perfect_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "secrets.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "secrets.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "Shayne-Ward_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "taylor-swift_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "wl.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "zom-marie_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "หรือฉันคิดไปเอง.mp4", "target-membership": [ "sqliteswift1/resources" ] },
+    { "path": "หรือฉันคิดไปเอง_0.jpg", "target-membership": [ "sqliteswift1/resources" ] },
+    {
       "kind": "group",
       "name": "Products",
       "children": [
@@ -43,6 +84,13 @@
         "compile-sources",
         "frameworks",
         "resources",
+      ],
+      "package-product-members": [
+        {
+          "package": "SQLite",
+          "product-name": "SQLite",
+          "build-phase": { "build-phase": "frameworks" },
+        },
       ],
       "build-settings": {
         "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
